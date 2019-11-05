@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>MUSK</title>
+
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/temp_style.css') }}">
+		
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+		
+		<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+
+	</head>
+
+
+	<body>
+		<!--style="background-color: lightgray"-->
+	<div class="site-content" style="background-color: white;">
+			  <header> <a href="">
+				<h4 class="logo" style="margin: inherit; margin-left: 30px; font-family: 'source-sans-pro';">MUSK</h4>
+				</a>
+				<nav>
+				  <ul>
+					<li><a style="font-family: 'source-sans-pro';" href="{{url_for('index2')}}"">HOME</a></li>
+					<li><a style="font-family: 'source-sans-pro';" href="{{url_for('contact')}}"">CONTACT</a></li>
+					<li><a style="font-family: 'source-sans-pro';" href="{{url_for('index')}}"">LOGOUT</a></li>
+				  </ul>
+				</nav>
+			  </header>
+		 
+			<!-- .site-header -->
+
+			
+			<div class="forecast-table" style="background-color: white;">
+				<div class="container" style="margin-top: 190px;">
+					
+					<div class="forecast-container">
+					  <div class="today forecast">
+							<div class="forecast-header">
+								<div class="day" style="float: none;">Temperatura - Sala</div>
+
+							</div> <!-- .forecast-header -->
+						<div class="forecast-content">
+						  <div class="degree">
+									<div class="num">{{ temp }}<sup>o</sup>C</div>
+									<div class="forecast-icon">
+									  <img src="static/images/icons/temperature-512.png" alt="">
+									</div>	
+							</div>
+						  </div>
+						</div>
+<div class="forecast">
+			<div class="forecast-header">
+								<div class="day"> Umidade</div>
+		  </div> <!-- .forecast-header -->
+							<div class="forecast-content">
+							  <div class="num" style="font-size: 62px;">{{ umid }} %</div>
+								<div class="forecast-icon">
+								  <img src="static/images/icons/umid-1.png" style="width: 70px;" alt="" >
+								</div>
+							</div>
+
+					  </div>
+					</div>
+				</div>
+			</div>
+			<main class="main-content">
+				<div class="fullwidth-block" style="margin-bottom: inherit; background-color: #52bad5;">
+					<div class="container">
+						<h2 class="section-title">Controle</h2>
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+							  <div class="live-camera">
+									<figure class="live-camera-cover" style="border: none;"><img src="static/images/ar-cond-1.png" alt="" width="50" height="5" ></figure>
+									<h3 align="center" class="location">Ar-Condicionado - 1</h3>
+									
+							  </div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="live-camera">
+									<figure class="live-camera-cover" style="border: none;"><img src="static/images/vent-1.png" alt=""></figure>
+									<h3 align="center" class="location">Ventilador - Teto 1</h3>
+									
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="live-camera">
+									<figure class="live-camera-cover" style="border: none; "><img style="width: 210px; height: 210px;" src="static/images/tv-1.png" alt=""></figure>
+									<h3 align="center" class="location">Televisor</h3>
+									
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="live-camera">
+									<figure class="live-camera-cover" style="border: none;"><img src="static/images/sound-1.png" alt=""></figure>
+									<h3 align="center" class="location">SoundBar</h3>
+		
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			  <div class="fullwidth-block">
+					<div class="container">
+						<h2 class="section-title" style="color: #A3A3A3;">Cômodos</h2>
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="live-camera">
+									<figure class="live-camera-cover"><img style="width: 210px; height: 210px;" src="static/images/icons/041-cradle.png" alt=""></figure>
+									<h3 class="location" style="color: #A3A3A3;">Quarto do Bêbê</h3>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="live-camera">
+									<figure class="live-camera-cover"><img src="static/images/icons/030-picture.png" style="width: 210px; height: 210px;" alt=""></figure>
+									<h3 class="location" style="color: #A3A3A3;">Sala</h3>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="live-camera">
+									<figure class="live-camera-cover"><img src="static/images/icons/028-bed.png" alt=""></figure>
+									<h3 class="location" style="color: #A3A3A3;">Quarto Principal</h3>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="live-camera">
+									<figure class="live-camera-cover"><img src="static/images/icons/013-tea-cup.png" alt=""></figure>
+									<h3 class="location" style="color: #A3A3A3;">Cozinha</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+			  </div>
+</main> <!-- .main-content -->
+
+	  <div class="copyright"> &copy;2018 - <strong>Samuel Santos e Guilherme Cabral</strong> </div>
+<!-- .site-footer -->
+		</div>
+		
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		
+	</body>
+
+</html>

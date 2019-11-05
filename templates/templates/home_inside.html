@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{{ url_for('static', filename='css/simpleGridTemplate.css') }}" rel="stylesheet" type="text/css">
+	
+<title>MUSK</title>
+<link href="{{ url_for('static', filename='stylesheets/css/singlePageTemplate.css') }}" rel="stylesheet" type="text/css">
+	<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+	
+	<style>
+
+		
+		.title_{
+			grid-template: up;
+			
+		}
+
+	</style>
+
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+    <!-- Navigation -->
+	
+	  <header id="logo"> 
+	
+		    <a class="logo"></a>
+		  
+
+		<nav>
+		  <ul>
+			<li id = "title_musk"><a href="" >MUSK</a></li>
+			<li><a href="{{url_for('index2')}}">HOME</a></li>
+			<li> <a href="{{url_for('index')}}">CONTACT</a></li>
+			<li><a href="{{url_for('index')}}">LOGOUT</a></li>
+		  </ul>
+		</nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="intro">
+    <div class="column">
+      <h3>JOHN DOE</h3>
+      <img src="static/images/profile.png" alt="" class="profile"> </div>
+    <div class="column">
+      <p>Olá, essa é a sua página principal e aqui estarão disponiveis todos os aplicativos desenvolvidos com o foco de facilitar o seu dia a dia. Futuramente se desenvolverá uma loja que permitirá que você baixe e se utilize apenas os aplicativos que você deseja, mas até lá aproveite todos os nossos serviços </p>
+      <p> Lembre-se sempre que estamos de ouvidos abertos a melhorias, assim caso surja uma nova ideia ou sugestão basta nos contactar. Estamos trabalhando cada vez mais para deixar esse projeto o mais amigavel possivel.  </p>
+    </div>
+  </section>
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail"> <a href="{{url_for('camera')}}"><img src="static/images/icons/036-camera.png" alt="512" width="200" /></a>
+      <h4>MODO VIGIA</h4>
+      <p class="tag">CÂMERA</p>
+      <p >Deixe que nós sejamos seus olhos e ouvidos<br> .</p>
+    </div>
+    <div class="thumbnail"> <a href="{{url_for('temp')}}"><img src="static/images/icons/thermometer-1.png" width="200" /></a>
+      <h4>TEMPERATURA</h4>
+      <p class="tag">COMO ESTÁ A CASA</p>
+      <p class=> Veja como deixar o seu ambiente mais confortavel</p>
+    </div>
+    <div class="thumbnail"> <a href="{{url_for('agenda')}}"><img src="static/images/icons/009-calendar-1.png" alt="" width="200"/></a>
+      <h4>AGENDA</h4>
+      <p class="tag">O QUE TEMOS PARA HOJE ?</p>
+      <p> Veja aqui quais são as suas próximas tarefas <br> .</p>
+    </div>
+</div>
+
+ 
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2018 - <strong>Samuel Santos e Guilherme Cabral</strong></div>
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>
